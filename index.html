@@ -248,8 +248,8 @@
 
 
 
- <footer class="bg-base-200 py-38">
-  <div class="footer text-base-content p-10">
+ <footer class="bg-base-200 ">
+  <div class="container lg:mx-auto grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 footer text-base-content p-10">
    <div>
     <h6 class="footer-title">Services</h6>
     <a class="link link-hover">Branding</a>
@@ -272,19 +272,14 @@
    </div>
    <div>
     <h6 class="footer-title">Newsletter</h6>
-    <div class="form-control w-80">
-     <label class="label">
-      <span class="label-text">Enter your email address</span>
-     </label>
-     <div class="join">
-      <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
-      <button class="btn btn-primary join-item">Subscribe</button>
-     </div>
-    </div>
+    <div class="join flex-col lg:flex-row">
+     <input class="input  join-item w-[130px]" placeholder="Email" />
+     <button class="btn mt-2 lg:mt-0 join-item bg-amber-700 lg:rounded-r-full roundedb-full w-[130px]">Subscribe</button>
+   </div>
    </div>
   </div>
 
-   <div class="mt-10 text-center">
+   <div class="-mt-8 text-center p-5">
     <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
    </div>
  </footer>
